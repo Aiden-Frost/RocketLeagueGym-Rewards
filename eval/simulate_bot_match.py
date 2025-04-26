@@ -13,7 +13,7 @@ from rlgym.rocket_league.state_mutators import MutatorSequence, FixedTeamSizeMut
 
 
 import os
-os.environ["WANDB_API_KEY"] = "f46013ff59ad00162f0adb0eb8dd03811505fbc6"
+os.environ["WANDB_API_KEY"] = "ENTER HERE"
 
 # Change the run name based on the models being tested
 import wandb
