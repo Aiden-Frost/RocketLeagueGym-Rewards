@@ -91,6 +91,8 @@ cp target/aarch64-apple-darwin/release/rlviser ../eval
 
 ### Visualizing Matches with `rlviser`
 
+Download the weights from the training cluster to your local machine. Change lines 73-74 in `visual_bot_match.py` to the policy weights checkpoint directory
+on your local machine.
 ```bash
 cd eval
 python visual_bot_match.py
