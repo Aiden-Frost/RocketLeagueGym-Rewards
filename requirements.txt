@@ -1,0 +1,8 @@
+rlgym
+rlgym[rl]
+rlgym[rl-sim]
+rlgym[rl-rlviser]
+rlgym[all]
+rocketsim
+git+https://github.com/AechPro/rlgym-ppo
+git+https://github.com/AechPro/rocket-league-gym-sim@main
