@@ -151,3 +151,23 @@ class CarDestroyer(RewardFunction[AgentID, GameState, float]):
                 rewards['blue-0' if agent=='orange-0' else 'orange-0'] = 1
         
         return rewards
+
+
+class TouchRewardPenalize(RewardFunction[AgentID, GameState, float]):
+    """
+    penalize when enemy has the ball. For more ball possession.
+    """
+
+    def reset(self, agents: List[AgentID], initial_state: GameState, shared_info: Dict[str, Any]) -> None:
+        pass
+
+    def get_rewards(self, agents: List[AgentID], state: GameState, is_terminated: Dict[AgentID, bool],
+                    is_truncated: Dict[AgentID, bool], shared_info: Dict[str, Any]) -> Dict[AgentID, float]:
+        
+        rewards = {'blue-0': 0, 'orange-0':0}
+        if state.cars['blue-0'].ball_touches > 0:
+            rewards['orange-0'] = -1
+        if state.cars['blue-0'].ball_touches > 0:
+            rewards['blue-0'] = -1
+        
+        return
