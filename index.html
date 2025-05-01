@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Long-term Consistent World Simulation with Memory">
+  <meta name="description" content="Reinforcement Learning in Rocket League (RL2) Multi reward system">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Long-term Consistent World Simulation with Memory</title>
+  <title>Reinforcement Learning in Rocket League (RL2) Multi reward system</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -19,14 +19,14 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
-  <meta property="og:site_name" content="Long-term Consistent World Simulation with Memory" />
-  <meta property="og:title" content="Long-term Consistent World Simulation with Memory" />
+  <meta property="og:site_name" content="Reinforcement Learning in Rocket League (RL2) Multi reward system" />
+  <meta property="og:title" content="Reinforcement Learning in Rocket League (RL2) Multi reward system" />
   <meta property="og:image:width" content="1280" />
   <meta property="og:image:height" content="720" />
 
   <meta property="article:publisher" content="" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Long-term Consistent World Simulation with Memory" />
+  <meta name="twitter:title" content="Reinforcement Learning in Rocket League (RL2) Multi reward system" />
 </head>
 
 
@@ -34,7 +34,7 @@
   <section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative; background-color: black;">
     <div class="hero-video" style="height: 100%; width: 177.77777778vh; min-width: 100%;min-height: 56.25vw;">
       <video playsinline autoplay muted loop style="opacity: 0.6;">
-        <source src=" ./resources/cover.mp4" type="video/mp4">
+        <source src=" ./resources/rl2/ddrl-project/straight_goal.mp4" type="video/mp4">
       </video>
     </div>
 
@@ -80,21 +80,15 @@
       <div class="container has-text-centered">
         <!-- <img src="./resources/icon_opa.png" alt="icon" style="height: 15em; vertical-align: middle; margin-right: 10px;"> -->
         <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 5rem; color: white !important;">
-          Long-term Consistent World Simulation with Memory
+          Reinforcement Learning in Rocket League (RL2) Multi reward system
         </h1>
         <span class="author-block" style="font-size: 2rem;">
-          <a href="https://xizaoqu.github.io/">Zeqi Xiao<sup>1</sup></a>&nbsp;&nbsp;
-          <a href="https://nirvanalan.github.io/">Yushi Lan<sup>1</sup></a>&nbsp;&nbsp;
-          <a href="https://zhouyifan.net/about/">Yifan Zhou<sup>1</sup></a>&nbsp;&nbsp;
-          <a href="https://vicky0522.github.io/Wenqi-Ouyang">Wenqi Ouyang<sup>1</sup></a>&nbsp;&nbsp;
-          <br>
-          <a href="https://williamyang1991.github.io/">Shuai Yang<sup>2</sup></a>&nbsp;&nbsp;
-          <a href="https://zengyh1900.github.io/">Yanhong Zeng<sup>3</sup></a>&nbsp;&nbsp;
-          <a href="https://xingangpan.github.io/">Xingang Pan<sup>1</sup></a>&nbsp;&nbsp;
+          <a href="https://xizaoqu.github.io/">Rahul Raman<sup>1</sup></a>&nbsp;&nbsp;
+          <a href="https://nirvanalan.github.io/">Satyanarayana Chillale<sup>1</sup></a>&nbsp;&nbsp;
+          <a href="https://zhouyifan.net/about/">Srivats Poddar<sup>1</sup></a>&nbsp;&nbsp;
+          <a href="https://vicky0522.github.io/Wenqi-Ouyang">Anirudh Garg<sup>1</sup></a>&nbsp;&nbsp;
         </span>
-        <br> <sup>1</sup>S-Lab, Nanyang Technological University, 
-        <br> <sup>2</sup>Wangxuan Institute of Computer Technology, Peking University,
-        <br> <sup>3</sup>Shanghai AI Laboratry
+        <br> <sup>1</sup>New York University
       </div>
   
     </div>
@@ -111,28 +105,31 @@
           <h2 class="title is-2">Highlight</h2>
           <div class="columns is-centered">
             <div class="column is-20">
-              <p class="has-text-left" style="font-size: 1.2rem; font-weight: 500; margin-top: 20px;">
-                <strong>WorldMem enables long-term consistent world simulation with memory mechanism. </strong> We can control agents to explore diverse and consistent worlds with an expansive action space, crafting environments by placing objects like pumpkin light or freely roaming around. Most importantly, after exploring for a while and glancing back, we find the objects we placed are still there, with the sight of the light melting surrounding snow, indicating the passage of time!
+              <p style="font-size: 1.2rem; color: #374151; line-height: 1.6; font-weight: 500; margin-top: 20px;">
+                The <strong>RL² multi-reward system</strong> enables the agents to learn faster in sparse reward environments—provided the rewards are aligned with an optimal policy. By designing reward functions experimentally and assigning appropriate weights, our agents consistently learn to score goals in gameplay.
+              </p>
+              <p style="font-size: 1.2rem; color: #374151; line-height: 1.6; font-weight: 500; margin-top: 20px;">
+                Beyond basic objectives, our surrogate reward functions have led agents to adopt <strong>human-like priors</strong>, such as long-shot scoring, tactical tackles, and opponent pressure. We find clear evidence of these emergent phases in agent strategy in our environment, each of which creates a new pressure for the opposing team to adapt.
               </p>
             </div>
           </div>
           <div class="columns is-centered" style="margin-bottom: 60px;">
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/cover.mp4" 
+                src="./resources/rl2/ddrl-project/goal-2.mp4" 
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
               <div class="columns is-centered">
                 <div class="column is-half has-text-centered">
-                  <img src="./resources/success_044.png" alt="" 
+                  <img src="./resources/rl2/ddrl-project/dodge_opponent.png" alt="" 
                        style="width: 100%; border-radius: 10px; border: 1px solid #bbb;">
-                  <p class="has-text-centered"><strong>Initial View</strong></p>
+                  <p class="has-text-centered"><strong>Dodge opponent</strong></p>
                 </div>
                 <div class="column is-half has-text-centered">
-                  <img src="./resources/success_128.png" alt="" 
+                  <img src="./resources/rl2/ddrl-project/catchup.png" alt="" 
                        style="width: 100%; border-radius: 10px; border: 1px solid #bbb;">
-                  <p class="has-text-centered"><strong>Revisited View</strong></p>
+                  <p class="has-text-centered"><strong>Catching up to save goal</strong></p>
                 </div>
               </div>
             </div>
@@ -150,23 +147,11 @@
             <!-- 让两个视频分别占据一半 -->
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/failure_consistency.mp4" 
+                src="./resources/rl2/ddrl-project/all_rewards_train.mov" 
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
-              <div class="columns is-centered">
-                <div class="column is-half has-text-centered">
-                  <img src="./resources/failure_000.png" alt="" 
-                       style="width: 100%; border-radius: 10px; border: 1px solid #bbb;">
-                  <p class="has-text-centered"><strong>Initial View</strong></p>
-                </div>
-                <div class="column is-half has-text-centered">
-                  <img src="./resources/failure_022.png" alt="" 
-                       style="width: 100%; border-radius: 10px; border: 1px solid #bbb;">
-                  <p class="has-text-centered"><strong>Revisited View</strong></p>
-                </div>
-              </div>
-              <h3 class="title is-4 has-text-centered">w/o Memory</h3>
+              <h3 class="title is-4 has-text-centered">With all rewards trained at once</h3>
             </div>
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
@@ -174,19 +159,7 @@
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
-              <div class="columns is-centered">
-                <div class="column is-half has-text-centered">
-                  <img src="./resources/success_000.png" alt="" 
-                       style="width: 100%; border-radius: 10px; border: 1px solid #bbb;">
-                  <p class="has-text-centered"><strong>Initial View</strong></p>
-                </div>
-                <div class="column is-half has-text-centered">
-                  <img src="./resources/success_022.png" alt="" 
-                       style="width: 100%; border-radius: 10px; border: 1px solid #bbb;">
-                  <p class="has-text-centered"><strong>Revisited View</strong></p>
-                </div>
-              </div>
-              <h3 class="title is-4 has-text-centered">w/ Memory</h3>
+              <h3 class="title is-4 has-text-centered">Step by step multi reward with weight decay</h3>
             </div>
           </div>
         </div>
@@ -199,12 +172,25 @@
     <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="column is-8">
-          <h2 class="title is-2">Compare with Ground Truth</h2>
+          <h2 class="title is-2">Stage wise Multi reward training</h2>
 
           <div class="columns is-centered">
             <div class="column is-20">
-              <p class="has-text-left" style="font-size: 1.2rem; font-weight: 500; margin-top: 20px;">
-                By conditioning on the memory bank, our framework accurately generates diverse and dynamic worlds that remains consistent with past states.
+                <p class="has-text-left" style="font-size: 1.2rem; font-weight: 500; margin-top: 20px;">
+                  Training the agent with multiple reward signals tends to result in faster convergence to an optimal policy. However, breaking the training into three distinct stages leads to more stable learning overall.
+                </p>
+                <p class="has-text-left" style="font-size: 1.2rem; font-weight: 500; margin-top: 20px;"></p>
+                  In the initial stage, when the policy entropy is high, the reward focuses solely on facing, touching, and moving toward the ball. This helps the agent develop fundamental control and direction.
+                </p>
+                <p class="has-text-left" style="font-size: 1.2rem; font-weight: 500; margin-top: 20px;"></p>
+                  In stage two, the objective shifts toward goal-oriented behavior. The agent learns to shoot effectively by optimizing for both the ball's velocity and its trajectory toward the goal.
+                </p>
+                <p class="has-text-left" style="font-size: 1.2rem; font-weight: 500; margin-top: 20px;"></p>
+                  In the final stage, the agent is trained to pressure the opponent based on player positioning and game state dynamics. Penalties are introduced when the opponent gains ball possession, and we incorporate fun behaviors—such as rewarding the agent for destroying an opponent.
+                </p>
+                <p class="has-text-left" style="font-size: 1.2rem; font-weight: 500; margin-top: 20px;"></p>
+                <strong> Below are some clips showcasing the agent scoring goals</strong>
+                </p>
               </p>
             </div>
           </div>
@@ -212,63 +198,57 @@
             <!-- 让两个视频分别占据一半 -->
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/ice_compare_gen.mp4" 
+                src="./resources/rl2/ddrl-project/goal-1.mp4" 
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
-              <h3 class="title is-4 has-text-centered">Generate Results</h3>
             </div>
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/ice_compare_gt.mp4" 
+                src="./resources/rl2/ddrl-project/goal-2.mp4" 
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
-              <h3 class="title is-4 has-text-centered">Ground Truth</h3>
             </div>
           </div>
           <div class="columns is-centered">
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/savanna_compare_gen.mp4" 
+                src="./resources/rl2/ddrl-project/goal-3.mp4" 
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
-              <h3 class="title is-4 has-text-centered">Generate Results</h3>
             </div>
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/savanna_compare_gt.mp4" 
+                src="./resources/rl2/ddrl-project/goal-4.mp4" 
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
-              <h3 class="title is-4 has-text-centered">Ground Truth</h3>
             </div>
           </div>
           <div class="columns is-centered">
             <!-- 让两个视频分别占据一半 -->
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/plains_compare_gen.mp4" 
+                src="./resources/rl2/ddrl-project/goal-5.mp4" 
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
-              <h3 class="title is-4 has-text-centered">Generate Results</h3>
             </div>
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/plains_compare_gt.mp4" 
+                src="./resources/rl2/ddrl-project/goal-6.mp4" 
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
-              <h3 class="title is-4 has-text-centered">Ground Truth</h3>
             </div>
           </div>
           <div class="columns is-centered">
             <!-- 让两个视频分别占据一半 -->
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/rain_compare_gen.mp4" 
+                src="./resources/rl2/ddrl-project/straight_goal.mp4" 
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
@@ -276,7 +256,7 @@
             </div>
             <div class="column is-8">
               <video controls autoplay loop muted playsinline 
-                src="./resources/rain_compare_gt.mp4" 
+                src="./resources/rl2/ddrl-project/straight_goal-2.mp4"
                 poster="./resources/loading-icon.gif"
                 style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
               </video>
