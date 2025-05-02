@@ -75,13 +75,13 @@ To use a specific reward, import it in `train.py` or `train_ddp.py`.
 ### Installing `rlviser` on macOS
 
 ```bash
-# Install Rust (choose one)
-brew install rust
-# or use: https://www.rust-lang.org/tools/install
+
+# Install Rust from https://www.rust-lang.org/tools/install
 
 # Clone and build
 git clone https://github.com/VirxEC/rlviser.git
 cd rlviser
+git checkout v0.7.17
 rustup install nightly
 cargo +nightly build --release -Z build-std=std --target aarch64-apple-darwin
 
