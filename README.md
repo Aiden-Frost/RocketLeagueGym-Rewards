@@ -1,5 +1,10 @@
 # RocketLeagueGym-Rewards
 
+## Project Links
+
+- 🌐 [Project Website](https://aiden-frost.github.io/RocketLeagueGym-Rewards/)
+- 📑 [Project Slides](https://docs.google.com/presentation/d/1Losh2EeNvpRQ31Fi9mhvghKpchoFJYR-8D2LuFRhyDY/edit?slide=id.g356eb091964_0_317#slide=id.g356eb091964_0_317)
+
 ## Setup
 
 Install [Miniconda3](https://www.anaconda.com/docs/getting-started/miniconda/install), then set up your environment:
