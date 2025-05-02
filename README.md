@@ -127,7 +127,7 @@ python human_match_improved.py
 Challenge any of the bots by loading the agent weight and playing.
 ```bash
 cd eval
-python human_match_improved.py
+python human_vs_bot.py
 ```
 
 ## TODO
