@@ -100,9 +100,34 @@ python visual_bot_match.py
 
 ### Simulating Matches with `rlgymsim`
 
+Used for simulating matches between two bots to compare performance of bots based on rewards cumulated and goals scored.
 ```bash
 cd eval
 python simulate_bot_match.py
+```
+
+### Testing reward functions in `rlviser`
+
+You can test the reward functions by playing manually as the **blue agent**.
+
+**Controls:**
+- `W`, `A`, `S`, `D`: Movement  
+- `Space`: Jump  
+- `Left Shift`: Boost  
+- `Q`, `E`: Roll  
+- `X`: Handbrake  
+
+```bash
+cd eval
+python human_match_improved.py
+```
+
+### Play against a bot
+
+Challenge any of the bots by loading the agent weight and playing.
+```bash
+cd eval
+python human_match_improved.py
 ```
 
 ## TODO

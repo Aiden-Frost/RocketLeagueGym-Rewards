@@ -61,11 +61,11 @@ def load_policy(checkpoint_folder):
     )
 
     policy_state = torch.load(f"{checkpoint_folder}/PPO_POLICY.pt", map_location=torch.device("cpu"))
-    value_net_state = torch.load(f"{checkpoint_folder}/PPO_VALUE_NET.pt", map_location=torch.device("cpu"))
+    # value_net_state = torch.load(f"{checkpoint_folder}/PPO_VALUE_NET.pt", map_location=torch.device("cpu"))
 
     # ppo.load_from(checkpoint_folder)
     ppo.policy.load_state_dict(policy_state)
-    ppo.value_net.load_state_dict(value_net_state)
+    # ppo.value_net.load_state_dict(value_net_state)
     
     ppo.policy.eval()
     return ppo.policy
